@@ -1,0 +1,158 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: rgba (245, 245, 255 ,1);
+$subColor: rgba (245, 248, 255 ,1);
+$keyColor: #7A5E5E;
+$fontColor: #5d627b;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em; 
+  background-color: $baseColor;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Font
+------------------------------------------------------------*/
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Header
+------------------------------------------------------------*/
+.header{
+  position: relative;
+}
+
+.header img{
+  width: 100%;
+  height: auto;
+  }
+
+.title {font-size: 3.2rem;
+  position: absolute;
+   color: #fff;
+   top: 50%;
+   left: 20%;
+   margin:0;
+   padding: 0;
+ }
+
+@media only screen and (max-width: 768px) {
+  .title {
+   font-size: 2.4rem;
+   position: absolute;
+   color: #fff;
+   top: 50%;
+   left: 20%;
+   margin:0;
+   padding: 0;
+ }
+}
+/* List
+------------------------------------------------------------*/
+.grid{
+  padding-bottom: 0;
+   h1{
+    font-size: 3.2rem;
+    margin: 40px 0;
+   }
+  .grid-box{
+   padding: 0;
+   margin: 0;
+   color: #5d627b;
+   background: #fff;
+   border-top: solid 1px rgba(235, 240, 250, 1);
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22)
+  }
+  .grid-box{
+  position: relative;
+  width: 100%;
+  float: left;
+  height: auto;
+  margin-bottom: 40px;
+  }
+  .grid-box h2{
+    font-size: 2.4rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .grid-box p{
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .grid-box img{
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 768px){
+ .grid{
+    .grid-box{
+      width: (100% / 3);
+    }
+  }
+}
+
+/* Contact
+------------------------------------------------------------*/
+.contact{
+  padding-bottom: 0;
+  text-align: center;
+  .contact h3{
+    margin-bottom: 40px;
+  }
+  h3{
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .square-button{
+    display: inline-block;
+    padding: 0.5em 4em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: $fontColor;
+  padding: 10px 0;
+  text-align: center;
+  color: #FFF;
+}
