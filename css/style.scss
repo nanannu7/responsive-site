@@ -51,10 +51,27 @@ body{
   position: relative;
 }
 
-.header img{
-  width: 100%;
-  height: auto;
-  }
+@media only screen and (min-width: 769px) {
+ .pc {
+   background-image: 
+   url("../imgs/img_top_pc.jpg");
+   height: 500px;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   }
+ }
+ 
+ @media only screen and (max-width: 768px) {
+ .pc {
+   background-image: 
+   url("../imgs/img_top_pc.jpg");
+   height: 250px;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   }
+ }
 
 .title {font-size: 3.2rem;
   position: absolute;
